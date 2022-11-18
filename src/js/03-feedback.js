@@ -8,8 +8,6 @@ window.addEventListener('load', onLoadPage);
 
 //1
 function getFormValue(evt) {
-  console.log(evt.currentTarget);
-
   const formValue = {
     email: form.email.value,
     message: form.message.value,
