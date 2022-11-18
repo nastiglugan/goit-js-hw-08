@@ -8,9 +8,11 @@ window.addEventListener('load', onLoadPage);
 
 //1
 function getFormValue(evt) {
+  console.log(evt.currentTarget);
+
   const formValue = {
-    email: evt.currentTarget.email.value,
-    message: evt.currentTarget.message.value,
+    email: form.email.value,
+    message: form.message.value,
   };
 
   localStorage.setItem('feedback-form-state', JSON.stringify(formValue));
